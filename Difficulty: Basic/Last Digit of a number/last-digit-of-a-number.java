@@ -1,34 +1,8 @@
-//{ Driver Code Starts
-//Initial Template for Java
-
-import java.util.Scanner;
-
-class Main {
-    
-    
-// } Driver Code Ends
-//User function Template for Java
-
-public static void utility(int n){
-
-    //just complete below statement
-    int ans = n % 10;
-
-    //below statement print the result
-    System.out.println(Math.abs(ans));
-}
-
-//{ Driver Code Starts.
-
-    public static void main(String[] args)
-    {
-        Scanner scn = new Scanner(System.in);
-        int t = scn.nextInt();
-        while(t-- > 0) {
-            int n = scn.nextInt();
-            utility(n);
-        }
-        scn.close();
+class Solution {
+    public int lastDigit(int n) {
+        // Code here
+        // int a;
+        // a = n % 10;
+        return Math.abs(n%10);
     }
 }
-// } Driver Code Ends
