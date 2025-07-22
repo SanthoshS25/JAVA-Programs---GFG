@@ -1,62 +1,21 @@
-//{ Driver Code Starts
-//Initial Template for Java
+import java.util.*;
 
-import java.util.Scanner;
-
-class Main {
-
-    
-// } Driver Code Ends
-//User function Template for Java
-
-  public static void fizzBuzz(int number) {
-        if (number > 0) {
-            if (number % 3 == 0 && number % 5 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (number % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (number % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(number);
-            }
-        } else {
-            System.out.println("Invalid input: Enter a positive number.");
+public class Solution {
+    public static void main(String args[]) {
+        // Your Code Here
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        if (a%3==0 && a%5!=0){
+            System.out.print("Fizz");
         }
-    }
-
-    // if (number % 3 ==0){
-    //     System.out.println("Fizz");
+        else if (a%5==0 && a%3!=0){
+            System.out.print("Buzz");
+        }
+        else if(a%3==0 && a%5==0){
+            System.out.print("FizzBuzz");
+        }
+        else{
+        System.out.print(a);}
         
-        
-        
-    // }
-    // if (number % 5 ==0){
-    //     System.out.println("Buzz");
-    // }
-    // if(number % 3 == 0 && number %5 ==0){
-    //     System.out.println("FizzBuzz");
-    // }
-    // if (number !=0){
-    //     System.out.println(number);
-        
-    // }
-    
-
-
-//{ Driver Code Starts.
-
-    public static void main(String[] args)
-    {
-        Scanner scn = new Scanner(System.in);
-        int t = scn.nextInt();
-        while(t-- > 0) {
-            int number = scn.nextInt();
-            fizzBuzz(number);
-        
-System.out.println("~");
-}
-        scn.close();
     }
 }
-// } Driver Code Ends
