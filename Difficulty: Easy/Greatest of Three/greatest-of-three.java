@@ -1,44 +1,35 @@
-//{ Driver Code Starts
-//Initial Template for Java
+//Back-end complete function Template for Java
+import java.util.*;
 
-import java.util.Scanner;
-
-class Main {
-
-    
-// } Driver Code Ends
-
-//User function Template for Java
-
-public static int find_greatest_number(int a, int b, int c){
-    // Write your code here..
-    if(a>=b && a>=c){
-        return a;
+public class Solution {
+    public static void main(String args[]) {
+        // Your code here
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = s.nextInt();
+        if (a>b){
+            if(a>c){
+                System.out.print(a);
+            }
+            else{
+                System.out.print(c);
+            }
+        }
+        else{
+            if(b>c){
+                 System.out.print(b);
+                
+            }
+            else{
+                if(c>a){
+                    System.out.print(c);
+                }
+                else{
+                    System.out.print(a);
+                }
+            }
+        }
         
     }
-    else if(b>=a && b>=c){
-        return b;
-    }
-    return c;
 }
-
-
-//{ Driver Code Starts.
-
-    public static void main(String[] args)
-    {
-        Scanner scn = new Scanner(System.in);
-        int t = scn.nextInt();
-        while(t-- > 0) {
-            int a = scn.nextInt();
-            int b = scn.nextInt();
-            int c = scn.nextInt();
-            int greatest_number = find_greatest_number(a,b,c);
-            System.out.println(greatest_number);
-        
-System.out.println("~");
-}
-        scn.close();
-    }
-}
-// } Driver Code Ends
